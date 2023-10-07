@@ -1,0 +1,6 @@
+name: City Content
+description: 'This module creates the city custom entity'
+type: module
+package: 'City Addons'
+core_version_requirement: ^9
+version: '9.x'

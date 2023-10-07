@@ -1,0 +1,16 @@
+city_importer.admin_page:
+  path: "/admin/structure/migrate/mongo-fetcher"
+  defaults:
+    _form: Drupal\city_importer\Form\MongoSettingsForm
+    _title: 'Admin Mongo migration field map'
+  requirements:
+    _permission: 'administer site configuration'
+city_importer.do_run_migration:
+  path: "/admin/structure/migrate/mongo-fetcher/trigger-migration"
+  defaults:
+    _controller: Drupal\city_importer\Controller\DoRunMigration::runMigration
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    no_cache: true
+

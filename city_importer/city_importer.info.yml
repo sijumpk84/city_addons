@@ -1,0 +1,12 @@
+name: City Importer
+description: 'Migrates the city content from mongodb and maps fields.'
+type: module
+package: 'City Addons'
+core_version_requirement: ^9
+version: '9.x'
+configure: city_importer.admin_page
+dependencies:
+  - drupal:migrate
+  - city_content:city_content
+  - migrate_plus:migrate_plus
+  - migrate_tools:migrate_tools

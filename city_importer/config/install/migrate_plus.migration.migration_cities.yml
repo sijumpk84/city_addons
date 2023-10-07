@@ -1,0 +1,24 @@
+uuid: 3151523a-d17e-413b-89db-847870b4d634
+id: migration_cities
+label: 'Migration exercise import city'
+dependencies:
+  enforced:
+    module:
+      - city_importer
+  module:
+    - city_content
+migration_tags:
+  - Migration Exercise
+migration_group: default
+source:
+  plugin: mongodb
+process:
+  remote_id: remote_id
+  title: title
+  city: city
+  loc_lat: loc_lat
+  loc_lon: loc_lon
+  pop: pop
+  state: state
+destination:
+  plugin: 'entity:city'

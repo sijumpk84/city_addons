@@ -1,0 +1,6 @@
+{
+    "description": "Drupal 9 driver for MongoDB",
+    "require": {
+        "ext-mongodb": "*"
+    }
+}

@@ -1,0 +1,5 @@
+city_importer.do_run_migration:
+  route_name: city_importer.do_run_migration
+  title: 'Import/Update Content'
+  appears_on:
+    - city_importer.admin_page
